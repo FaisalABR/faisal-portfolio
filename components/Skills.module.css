@@ -1,0 +1,116 @@
+.section {
+  padding: 200px 0; /* Increased padding for taller section */
+  position: relative;
+  overflow: hidden;
+  /* Removed background color to let parallax show */
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Thinner fade */
+  background: linear-gradient(to bottom, var(--bg-secondary) 0%, transparent 100%);
+  z-index: 5; /* Above stars, below content */
+  pointer-events: none;
+}
+
+.section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Thinner fade */
+  background: linear-gradient(to top, var(--bg-secondary) 0%, transparent 100%);
+  z-index: 5; /* Above stars, below content */
+  pointer-events: none;
+}
+
+.parallaxBackground {
+  position: absolute;
+  top: -20%;
+  left: 0;
+  width: 100%;
+  height: 140%;
+  background-color: #030014; /* Deep space blue/black */
+  background-image: 
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 3px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 2px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 3px),
+    radial-gradient(circle at 50% 50%, rgba(76, 29, 149, 0.2), rgba(15, 23, 42, 0.1)); /* Nebula glow */
+  background-size: 550px 550px, 350px 350px, 250px 250px, 100% 100%;
+  background-position: 0 0, 40px 60px, 130px 270px, center;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent; /* Removed dark overlay to make stars visible */
+  z-index: 1;
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 10; /* Ensure it's above background */
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #fff; /* Ensure visibility */
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  cursor: default;
+  min-width: 120px;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  animation: twinkle var(--duration, 3s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); box-shadow: 0 0 10px rgba(255, 255, 255, 1); }
+  100% { opacity: 0.2; transform: scale(0.8); }
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
