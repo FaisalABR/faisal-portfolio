@@ -80,7 +80,7 @@ const projects = [
     id: 8,
     title: "Eduwork V2",
     year: "2024",
-    description: "Real-time weather tracking application with detailed forecasts.",
+    description: "A new version of web educational non-formal from eduwork.",
     stack: ["Javascript", "Alpine", "Laravel"],
     link: "https://eduwork.id/",
     github: null,
