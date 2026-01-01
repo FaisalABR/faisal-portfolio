@@ -157,20 +157,7 @@ export default function Projects() {
           </AnimatePresence>
         </motion.div>
 
-        {projects.length > 2 && (
-          <div className={styles.expandContainer}>
-            <button 
-              className={styles.expandButton}
-              onClick={() => setIsExpanded(!isExpanded)}
-            >
-              {isExpanded ? (
-                <>Show Less <ChevronUp size={20} /></>
-              ) : (
-                <>Expand More <ChevronDown size={20} /></>
-              )}
-            </button>
-          </div>
-        )}
+        
       </div>
     </section>
   );
