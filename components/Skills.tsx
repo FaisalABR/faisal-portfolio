@@ -11,6 +11,8 @@ const skills = [
   {name: 'Laravel', icon: 'https://cdn.simpleicons.org/laravel/FF6C37'},
   { name: "Next.js", icon: "https://cdn.simpleicons.org/nextdotjs/ffffff" },
   {name: 'NestJS', icon: 'https://cdn.simpleicons.org/nestjs/E92747'},
+  { name: "Python", icon: "https://cdn.simpleicons.org/python/3776AB" },
+  { name: "MQTT", icon: "https://cdn.simpleicons.org/mqtt/000000" },
   { name: "TypeScript", icon: "https://cdn.simpleicons.org/typescript/3178C6" },
   { name: "Node.js", icon: "https://cdn.simpleicons.org/nodedotjs/339933" },
   {name: 'Google Cloud', icon: 'https://cdn.simpleicons.org/googlecloud/4285F4'},

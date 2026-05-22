@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Github, Phone, Send } from 'lucide-react';
+import { Mail, Github, Phone, Send, Linkedin } from 'lucide-react';
 import styles from './Contact.module.css';
 
 export default function Contact() {
@@ -32,6 +32,10 @@ export default function Contact() {
             <a href="https://github.com/faisalABR" className={styles.linkCard}>
               <Github className={styles.icon} />
               <span>github.com/faisalABR</span>
+            </a>
+            <a href="https://www.linkedin.com/in/faisal-abu-bakar-riza-0271b2223/" className={styles.linkCard}>
+              <Linkedin className={styles.icon} />
+              <span>Faisal Abu Bakar Riza</span>
             </a>
           </div>
 

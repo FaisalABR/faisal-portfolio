@@ -90,7 +90,7 @@ export default function Hero() {
           <p className={styles.bio}>
             Hi, I'm Faisal Abu Bakar Riza - a <span className={styles.highlight}>Software Engineer</span> passionate about creating seamless digital experiences that connect and convert.
           </p>
-          <a href="https://drive.google.com/file/d/1nwzwPoOfiF23zOpp5-_AWSQ8aB61O7N8/view?usp=sharing" className={styles.ctaButton}>
+          <a href="https://drive.google.com/file/d/1nwzwPoOfiF23zOpp5-_AWSQ8aB61O7N8/view?usp=sharing" className={styles.button}>
             <File size={20} />
             Resume
           </a>

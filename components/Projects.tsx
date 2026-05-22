@@ -7,6 +7,16 @@ import styles from './Projects.module.css';
 
 const projects = [
   {
+    id: 9,
+    title: "SAM AI Surveillance System",
+    year: "April 2026",
+    description: "An AI-powered surveillance system for monitoring and analyzing security footage in real-time.",
+    stack: ["Python", "ExpressJS", "PostgreSQL", "MQTT"],
+    link: "https://vms.samtek.id/login",
+    github: null,
+    image: "/sam-ai.webp"
+  },
+  {
     id: 1,
     title: "Meiwa Mold Dev System",
     year: "Nov 2025",

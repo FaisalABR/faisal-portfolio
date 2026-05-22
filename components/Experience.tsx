@@ -8,33 +8,41 @@ import styles from './Experience.module.css';
 const experiences = [
   {
     id: 1,
+    role: "Software Engineer",
+    company: "PT Safanah Alvan Maksima",
+    logo: "/logo/sam.jpeg",
+    year: "Feb 2026 - April 2026",
+    description: "Successfully accelerated setup, deployment, and incident response times by up to 80% through CI/CD pipeline automation and real-time monitoring. Additionally, optimized system performance by reducing data latency to under 1 second using MQTT communication, while ensuring near-zero data loss through a robust Point-in-Time Recovery strategy."
+  },
+  {
+    id: 2,
     role: "Fullstack Engineer",
     company: "Cloud Ace Indonesia",
-    logo: "https://media.licdn.com/dms/image/v2/C510BAQGof1e7qGWoEA/company-logo_100_100/company-logo_100_100/0/1630626255281/cloud_ace_logo?e=1767830400&v=beta&t=gh1ukJdbZFEbytTcMZrDsfW3APjFJNnGFY4z3CwAvF8",
+    logo: "/logo/cloud_ace.jpeg",
     year: "Jul 2025 - Nov 2025",
     description: "Engineered full-stack ERP systems using NestJS and React, integrating machine learning and GCP for scalable factory operations. Managed the end-to-end lifecycle—from developing real-time production modules to conducting client-focused testing and feedback refinement.",
   },
   {
-    id: 2,
+    id: 3,
     role: "Frontend Engineer",
     company: "DOT Indonesia",
-    logo: "https://media.licdn.com/dms/image/v2/C510BAQGsUwLlWag9yw/company-logo_100_100/company-logo_100_100/0/1631408920140/dot_indonesia_logo?e=1767830400&v=beta&t=SvgEZKx36PYoRGv4L6kwQsm43-erYoyN2ETCzyyT0VI",
+    logo: "/logo/dot.jpeg",
     year: "Aug 2024 - Feb 2025",
     description: "Contributed to 3 large and mid-scale projects using React and Next.js, implementing an Atomic Design system and advanced styling tools like Tailwind and Ant Design. Collaborated within an Agile Scrum environment to accelerate feature delivery through iterative sprints and continuous feedback."
   },
   {
-    id: 3,
+    id: 4,
     role: "Programmer",
     company: "Eduwork",
-    logo: "https://media.licdn.com/dms/image/v2/D560BAQFlHotZc1i2yA/company-logo_100_100/B56Zc6YOpyG0AU-/0/1749031120016/eduwork_id_logo?e=1767830400&v=beta&t=bl1gqmGMR-iL3sJFgy2SeFcj_Fr23_95AO0IwZcOOzw",
+    logo: "/logo/eduwork.jpeg",
     year: "Mar 2024 - Jun 2024",
     description: "Delivered responsive UIs for 7 projects using React and JavaScript, leveraging Redux for scalable state management and Agile (Scrum) practices to boost team productivity by 20%.",
   },
   {
-    id: 4,
+    id: 5,
     role: "Frontend Engineer",
     company: "Torche",
-    logo: "https://media.licdn.com/dms/image/v2/C560BAQHfriuisiPb2A/company-logo_200_200/company-logo_200_200/0/1649081016459?e=1767830400&v=beta&t=jGib7I6L9JOEdEg2-d5llFNWtW-jrVxtRJ1N1ukekyU",
+    logo: "/logo/torche.jpeg",
     year: "Mar 2023 - Jun 2023",
     description: "Developed a reusable React component library that reduced development time by 20%, while collaborating with UX/UI teams to optimize interfaces and driving the adoption of innovative technologies to streamline development workflows."
   }
